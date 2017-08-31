@@ -1,0 +1,13 @@
+.plano-box {
+    background: blue;
+}
+
+.plano-box .box-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.plano-box .box-title {
+    display: block;
+    text-align: center;
+}
