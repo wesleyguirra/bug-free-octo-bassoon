@@ -1,13 +1,89 @@
-.plano-box {
-    background: blue;
-}
-
-.plano-box .box-icon {
+.plano {
     display: block;
-    margin: 0 auto;
 }
 
-.plano-box .box-title {
+.plano .plano-box {
+    display: block;
+    margin: 40px auto;
+    position: relative;
+    max-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgb(0,246,255);
+    background: -webkit-linear-gradient(rgba(0,246,255,1) 0%, rgba(0,169,175,1) 100%);
+    background: -moz-linear-gradient(rgba(0,246,255,1) 0%, rgba(0,169,175,1) 100%);
+    background: -o-linear-gradient(rgba(0,246,255,1) 0%, rgba(0,169,175,1) 100%);
+    background: linear-gradient(rgba(0,246,255,1) 0%, rgba(0,169,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6ff', endColorstr='#00a9af',GradientType=0 );
+    color: #fff;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,170,176,0.16);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,170,176,0.16);
+    box-shadow: 0px 10px 20px 0px rgba(0,170,176,0.16);
+}
+
+.plano .plano-box .box-icon {
+    display: block;
+    margin: 70px auto;
+}
+
+.plano .plano-box .box-title {
     display: block;
     text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.plano .plano-box .box-description {
+    display: block;
+    white-space: normal;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.plano .plano-box .box-image {
+    position: absolute;
+    bottom: -20px;
+    left: -110px;
+}
+
+.plano h4 {
+    color: #424F53;
+    font-size: 1.5rem;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.plano ul {
+    list-style: none;
+}
+
+.plano ul li {
+    line-height: 20px;
+    color: #95989A;
+    margin: 10px 0;
+}
+
+.plano ul li i,
+.plano ul li span {
+    margin: 0 5px;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.plano ul li.is-available i {
+    color: #C9F47B;
+}
+
+.plano ul li.not-available i {
+    color: #EC7D7D;
+}
+
+@media screen and (min-width: 960px) {
+    .planos {
+        white-space: nowrap;
+    }
+    .planos .plano {
+        display: inline-block;
+        width: 50%;
+    }
 }
